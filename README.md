@@ -12,8 +12,10 @@ Four different sets of images are recorded with webcam and stored in teachablema
 
 ## Milestone 3: Install the dependencies
 
-A conda environment, p38, is created with python version 3.8. Python libraries opencv-python, tensorflow, and ipykernel are installed to meet the dependencies of the project. 
+A conda environment, p38, is created with python version 3.8. Python libraries opencv-python, tensorflow, and ipykernel are installed to meet the dependencies of the project. Using a pre-existing code, the functionality of the model is tested. 
 
 ## Milestone 4: Create a Rock-Paper-Scissors game
+
+A manual version of the game is created. It randomly selects computer choice and asks verbally the user to provide his. Once this is done the comparison is made and either declared a tie or the winner is announced. 
 
 ## Milestone 5: Use the camera to play Rock-Paper-Scissors
