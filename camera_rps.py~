@@ -1,5 +1,3 @@
-import cv2
-
 def get_prediction(model):
     model_index = numpy.argmax(model)
     if model_index==0:
