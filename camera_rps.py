@@ -13,3 +13,5 @@ def get_prediction(model):
         choice = "scissors"
     # end if
     return choice
+
+cv2.imshow()
