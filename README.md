@@ -19,3 +19,5 @@ A conda environment, p38, is created with python version 3.8. Python libraries o
 A manual version of the game is created. It randomly selects computer choice and asks verbally the user to provide his. Once this is done the comparison is made and either declared a tie or the winner is announced. 
 
 ## Milestone 5: Use the camera to play Rock-Paper-Scissors
+
+The user choice is acquired via computer vision model instead of asking it verbally. This is done in a loop that continues for three seconds, after which it declares the user's choice in the terminal. This is compared to the computer selection and once either the compute or the user have three wins, the winner is announced. 
