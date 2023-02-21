@@ -7,6 +7,15 @@ model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
+class RockPaperScissors:
+    '''
+    This class is used to determine winner of the rock-paper-scissors game.
+    '''
+    def __init__(self):
+        self.user_choice = self.user_choice()
+        self.computer_choice = self.computer_choice()
+        self.winner = self.get_winner()
+
 def get_computer_choice():
     rps_list = ["rock", "paper", "scissors"]
     computer_choice = random.choice(rps_list)
@@ -27,6 +36,15 @@ def get_user_choice():
         user_choice = get_prediction(prediction)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+    if user_choice=="rock":
+        print("You chose rock.")
+    elif user_choice=="paper":
+        print("You chose paper.")
+    elif user_choice=="scissors":
+        print("You chose scissors.")
+    else:
+        print("You chose nothing.")
+    # end if
     return user_choice
 
 def get_prediction(model):
@@ -61,15 +79,6 @@ computer_wins = 0  ;  user_wins = 0
 for i in range(0,99):
     computer_choice = get_computer_choice()
     user_choice = get_user_choice()
-    if user_choice=="rock":
-        print("You chose rock.")
-    elif user_choice=="paper":
-        print("You chose paper.")
-    elif user_choice=="scissors":
-        print("You chose scissors.")
-    else:
-        print("You chose nothing.")
-    # end if
     winner = get_winner(computer_choice, user_choice)
     if winner=="computer":
         computer_wins = computer_wins + 1
@@ -83,7 +92,7 @@ for i in range(0,99):
         print("Game over, you are the winner.")
         break
     else:
-        print("Nobody won, something is not right...")
+        print("Next round...")
     # end if
 # end for
          
