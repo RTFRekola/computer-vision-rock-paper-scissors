@@ -6,8 +6,8 @@ Rock-Paper-Scissors is a game in which each player simultaneously shows one of t
 
 When preparing to run this code for the first time, do the following:
 
-- create a directory for the code; e.g. in Linux terminal mkdir hangman
-- copy files camera.rps, , keras_model.h5, labels.txt, requirements.txt into the directory you just created
+- create a directory for the code; e.g. in Linux terminal mkdir roce_paper_scissors
+- copy files camera.rps, keras_model.h5, labels.txt, requirements.txt into the directory you just created
 
 ## Usage Instructions
 
